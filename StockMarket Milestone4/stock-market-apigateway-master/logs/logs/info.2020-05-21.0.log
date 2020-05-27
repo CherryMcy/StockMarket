@@ -1,0 +1,90 @@
+2020-05-21 15:20:15,016 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$361dce10] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-21 15:20:15,469 - Fetching config from server at : http://localhost:8888
+2020-05-21 15:20:17,594 - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2020-05-21 15:20:17,594 - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/Apigateway/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2020-05-21 15:20:17,594 - No active profile set, falling back to default profiles: default
+2020-05-21 15:20:18,250 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-05-21 15:20:18,250 - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-05-21 15:20:18,656 - BeanFactory id=76d31cbd-b051-3dd9-bfe1-ff7ade2ba3fc
+2020-05-21 15:20:18,859 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$361dce10] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-21 15:20:19,062 - No URLs will be polled as dynamic configuration sources.
+2020-05-21 15:20:19,062 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-21 15:20:19,109 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@21263314
+2020-05-21 15:20:19,406 - No URLs will be polled as dynamic configuration sources.
+2020-05-21 15:20:19,406 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-21 15:20:19,624 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-21 15:20:21,846 - 
+
+Using generated security password: b93680c1-8a75-468d-aa1a-9bcb6ef4b769
+
+2020-05-21 15:20:22,001 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6750e381, org.springframework.security.web.context.SecurityContextPersistenceFilter@7e3d2ebd, org.springframework.security.web.header.HeaderWriterFilter@7d59e968, org.springframework.web.filter.CorsFilter@5d850a25, org.springframework.security.web.authentication.logout.LogoutFilter@4602f874, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19b5214b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@231b35fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b022551, org.springframework.security.web.session.SessionManagementFilter@4f235107, org.springframework.security.web.access.ExceptionTranslationFilter@130cfc47]
+2020-05-21 15:20:22,735 - Starting filter initializer
+2020-05-21 15:20:22,767 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-21 15:20:22,845 - Setting initial instance status as: STARTING
+2020-05-21 15:20:22,907 - Initializing Eureka in region us-east-1
+2020-05-21 15:20:22,985 - Using JSON encoding codec LegacyJacksonJson
+2020-05-21 15:20:22,985 - Using JSON decoding codec LegacyJacksonJson
+2020-05-21 15:20:23,095 - Using XML encoding codec XStreamXml
+2020-05-21 15:20:23,095 - Using XML decoding codec XStreamXml
+2020-05-21 15:20:23,268 - Resolving eureka endpoints via configuration
+2020-05-21 15:20:23,551 - Disable delta property : false
+2020-05-21 15:20:23,551 - Single vip registry refresh property : null
+2020-05-21 15:20:23,551 - Force full registry fetch : false
+2020-05-21 15:20:23,552 - Application is null : false
+2020-05-21 15:20:23,552 - Registered Applications size is zero : true
+2020-05-21 15:20:23,552 - Application version is -1: true
+2020-05-21 15:20:23,552 - Getting all instance registry info from the eureka server
+2020-05-21 15:20:23,656 - The response status is 200
+2020-05-21 15:20:23,659 - Starting heartbeat executor: renew interval is: 30
+2020-05-21 15:20:23,661 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-05-21 15:20:23,665 - Discovery Client initialized at timestamp 1590045623663 with initial instances count: 0
+2020-05-21 15:20:23,670 - Started ApigatewayApplicationTests in 9.626 seconds (JVM running for 10.305)
+2020-05-21 15:20:23,814 - Flipping property: user-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-05-21 15:20:23,874 - Shutdown hook installed for: NFLoadBalancer-PingTimer-user-service
+2020-05-21 15:20:23,874 - Client: user-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=user-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-05-21 15:20:23,881 - Using serverListUpdater PollingServerListUpdater
+2020-05-21 15:20:23,885 - DynamicServerListLoadBalancer for client user-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=user-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@8aa5ab4
+2020-05-21 15:20:23,943 - Shutting down the Executor Pool for PollingServerListUpdater
+2020-05-21 15:20:23,945 - Unregistering application APIGATEWAY with eureka with status DOWN
+2020-05-21 15:20:23,946 - Saw local status change event StatusChangeEvent [timestamp=1590045623946, current=DOWN, previous=STARTING]
+2020-05-21 15:20:23,948 - DiscoveryClient_APIGATEWAY/DESKTOP-C4O8VBT:Apigateway:-1: registering service...
+2020-05-21 15:20:23,949 - Stopping filter initializer
+2020-05-21 15:20:23,953 - Shutdown hook removed for: NFLoadBalancer-PingTimer-user-service
+2020-05-21 15:20:23,955 - Exception caught (might be ok if at shutdown)
+java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.lang.Runtime.removeShutdownHook(Runtime.java:239)
+	at com.netflix.util.concurrent.ShutdownEnabledTimer.cancel(ShutdownEnabledTimer.java:70)
+	at com.netflix.loadbalancer.BaseLoadBalancer.cancelPingTask(BaseLoadBalancer.java:632)
+	at com.netflix.loadbalancer.BaseLoadBalancer.shutdown(BaseLoadBalancer.java:883)
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.shutdown(DynamicServerListLoadBalancer.java:285)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:339)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:273)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1040)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1033)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:975)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:92)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1040)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1033)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
+2020-05-21 15:20:23,961 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-21 15:20:23,977 - Shutting down DiscoveryClient ...
+2020-05-21 15:20:24,018 - DiscoveryClient_APIGATEWAY/DESKTOP-C4O8VBT:Apigateway:-1 - registration status: 204
+2020-05-21 15:20:24,018 - Unregistering ...
+2020-05-21 15:20:24,034 - DiscoveryClient_APIGATEWAY/DESKTOP-C4O8VBT:Apigateway:-1 - deregister  status: 200
+2020-05-21 15:20:24,034 - Completed shut down of DiscoveryClient
