@@ -1,0 +1,74 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.39">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>cherry</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.16">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+  </actions>
+  <queueId>11</queueId>
+  <timestamp>1592233031680</timestamp>
+  <startTime>1592233031741</startTime>
+  <result>SUCCESS</result>
+  <duration>22014</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>node{
+    stage(&apos;Clean&apos;){
+        echo &apos;start clean&apos;
+        bat &apos;&apos;&apos;if exist D:\\FSD\\milestone3\\stock-market-discovery-service-master\\target (rd/s/q D:\\FSD\\milestone3\\stock-market-discovery-service-master\\target)
+               exit&apos;&apos;&apos;
+        
+    }
+    stage(&apos;Build&apos;){
+        echo &apos;start build&apos;
+        bat &apos;&apos;&apos;d:
+            cd &quot;D:\\FSD\\milestone3\\stock-market-discovery-service-master&quot;
+            mvn package -DskipTests
+            exit&apos;&apos;&apos;
+    }
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>1229231400</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>5325900</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>1704975100</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>13193300</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>105117900</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>19</iota>
+    <head>1:19</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

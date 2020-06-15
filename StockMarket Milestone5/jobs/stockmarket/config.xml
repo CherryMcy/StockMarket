@@ -1,0 +1,27 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.39">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.80">
+    <script>node{
+    stage(&apos;Clean&apos;){
+        echo &apos;start clean&apos;
+        bat &apos;&apos;&apos;if exist D:\\FSD\\milestone3\\stock-market-discovery-service-master\\target (rd/s/q D:\\FSD\\milestone3\\stock-market-discovery-service-master\\target)
+               exit&apos;&apos;&apos;
+        
+    }
+    stage(&apos;Build&apos;){
+        echo &apos;start build&apos;
+        bat &apos;&apos;&apos;d:
+            cd &quot;D:\\FSD\\milestone3\\stock-market-discovery-service-master&quot;
+            mvn package -DskipTests
+            exit&apos;&apos;&apos;
+    }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>
